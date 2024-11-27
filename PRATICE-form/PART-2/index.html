@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="application-form">
+        <h1>Job Application Form</h1>
+        <form>
+
+            <div class="form-group">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="tel" placeholder="Phone Number (e.g., 123-456-789)" required>
+                <input type="url" placeholder="LinkedIn Profile URL">
+            </div>
+
+
+            <div class="form-group">
+                <select required>
+                    <option value="" disabled selected>Select Job Position</option>
+                    <option value="frontend">Frontend Developer</option>
+                    <option value="backend">Backend Developer</option>
+                    <option value="designer">UI/UX Designer</option>
+                </select>
+
+                <div class="employment-type">
+                    <p>Employment Type:</p>
+                    <label><input type="radio" name="employment" value="full-time" required> Full-Time</label>
+                    <label><input type="radio" name="employment" value="part-time"> Part-Time</label>
+                    <label><input type="radio" name="employment" value="internship"> Internship</label>
+                </div>
+            </div>
+
+
+            <div class="skills">
+                <p>Skills:</p>
+                <label><input type="checkbox" value="JavaScript"> JavaScript</label>
+                <label><input type="checkbox" value="Python"> Python</label>
+                <label><input type="checkbox" value="Communication"> Communication</label>
+                <label><input type="checkbox" value="Design"> Design</label>
+            </div>
+
+
+            <textarea placeholder="Write your cover letter here..." maxlength="500"></textarea>
+
+
+            <button type="submit">Submit Application</button>
+        </form>
+    </main>
+</body>
+</html>
